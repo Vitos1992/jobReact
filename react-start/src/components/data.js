@@ -1,8 +1,8 @@
-const ways = [
+export const ways = [
     {
         title: 'Strategy',
         description: 
-        'Our goal is to identify the business problem to walk away with the perfect and creative solution.',
+        'Our goal is to identify the business problem to walk away with the perfect and creative solution.'
     },
     {
         title: 'Punctuality',
@@ -20,5 +20,3 @@ const ways = [
         'Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.',
     }
 ];
-
-export default ways;
