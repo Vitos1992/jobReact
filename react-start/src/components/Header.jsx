@@ -1,15 +1,20 @@
+import { useState } from 'react';
 import '../App.css'
 import Logo from '../assets/logo.svg'
 
 
 function Header() {
-    const now = new Date();
+    const [now, setNow] = useState(new Date());
+    //const now = new Date();
+    setInterval(() => setNow(new Date()), 1000)
     
     return (
-    <header className='header_box'>
-        <img src={Logo} alt={'Логотип'} />
+    <header>
+        <div className='header_box'>
+            <img src={Logo} alt={'Логотип'} />
 
-        <p>час: {now.toLocaleTimeString()}</p>
+            <p className='clock '>час: {now.toLocaleTimeString()}</p>
+        </div>
     </header>
     );
 }

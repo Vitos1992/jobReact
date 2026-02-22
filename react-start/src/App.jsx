@@ -2,10 +2,17 @@
 import './App.css'
 import Header from './components/Header';
 import WayToTech from './components/WayToTech.jsx';
-import Button from './components/Button.jsx';
-import { ways } from './components/data.js';
+import Button from './components/Button/Button.jsx';
+import { useState } from 'react';
+import { ways, listNext } from './components/data.js';
 
 function App() {
+  const [contentType, setContentType] = useState(null);
+  
+  function handOnClick(type) {
+    setContentType(type);
+  }
+
   return (
     <div>
       <Header />
@@ -30,7 +37,14 @@ function App() {
 
         <section>
           <h2>About us</h2>
-          <Button />
+          <div className='btn_section'>
+            <Button onClick={() => handOnClick('next')}>Next</Button> 
+            <Button onClick={() => handOnClick('priveus')}>Priveus</Button> 
+          </div>
+
+          {/* тернарний оператор */}
+          {!contentType && <p className='text_content'>НАТИСНИ КНОПКУ</p>}
+          {contentType && <p className='text_content'>{listNext[contentType]}</p>}
         </section>
       </main>
     </div>

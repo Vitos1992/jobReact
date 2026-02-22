@@ -20,3 +20,8 @@ export const ways = [
         'Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.',
     }
 ];
+
+export const listNext = {
+    next: 'Bring the key message to the brand audience for the best price within the shortest possible time.',
+    priveus: 'Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.'
+};
