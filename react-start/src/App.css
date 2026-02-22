@@ -16,6 +16,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* === header === */
+
 .header_box {
   background-color: #314146;
   border-bottom: 2px solid #2c1e95;
@@ -23,6 +25,13 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 5px 25px;
+}
+
+.box_log {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
 .clock {
@@ -44,13 +53,34 @@ body {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
+/* @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} */
+
+.title_logo {
+  font-family: "Releway", sans-serif;
+  color: aquamarine;
+  font-size: 18px;
+  line-height: 1.17;
+  font-weight: 800;
+  text-decoration: uppercase;
+  letter-spacing: 0.03em;
+
+}
+
+.title_studio {
+  font-family: "Releway", sans-serif;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.17;
+  font-weight: 800;
+  text-decoration: uppercase;
+  letter-spacing: 0.03em;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -58,6 +88,37 @@ body {
     animation: logo-spin infinite 20s linear;
   }
 }
+
+/* === technologis === */
+
+.items {
+  width: 100%;
+  background-color: #2f2f42;
+  text-align: center;
+  padding-bottom: 112px;
+  padding-top: 112px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../src/assets/people-office\ 1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.title_item {
+  display: block;
+  width: 496px;
+  font-size: 56px;
+  font-weight: 700;
+  color: aquamarine;
+  line-height: 1.11;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text_item {}
 
 
 .card {
