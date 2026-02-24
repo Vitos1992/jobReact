@@ -118,7 +118,16 @@ body {
   margin-right: auto;
 }
 
-.text_item {}
+.text_item {  
+  display: block;
+  width: 496px;
+  font-size: 24px;
+  font-weight: 300;
+  color: aquamarine;
+  line-height: 1.11;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;}
 
 
 .card {

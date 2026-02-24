@@ -4,13 +4,6 @@ import { ways } from "../components/data.js";
 export default function Technologis() {
     return (
         <section className="technologis">
-            
-            <div className="items">
-                <h1 className="title_item">Hello Vitala</h1>
-
-                <p className="text_item">Вітаю з першим проєктом на React </p>
-            </div>
-
             <h2>Technologis</h2>
 
             <ul className="list list_ways">
