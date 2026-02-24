@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   text-align: center;
 }
@@ -18,13 +18,19 @@ body {
 
 /* === header === */
 
-.header_box {
+.header_react {
   background-color: #314146;
-  border-bottom: 2px solid #2c1e95;
+}
+
+
+.header_box {
+  /* border-bottom: 2px solid #2c1e95; */
+  width: 1280px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 25px;
+  padding: 20px 15px;
+  margin: 0 auto;
 }
 
 .box_log {
@@ -83,6 +89,17 @@ body {
   letter-spacing: 0.03em;
 }
 
+.title_section {
+  color: #2e2f42;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
@@ -92,7 +109,7 @@ body {
 /* === technologis === */
 
 .items {
-  width: 100%;
+  width: 1280px;
   background-color: #2f2f42;
   text-align: center;
   padding-bottom: 112px;
@@ -103,6 +120,7 @@ body {
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
 
 }
 
@@ -151,12 +169,16 @@ margin-right: 0;
 }
 
 .list_ways {
+  width: 1280px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
 .btn_section {
+  width: 1280px;
+  margin: 0 auto;
   display: flex;
   gap: 25px;
   align-items: center;
@@ -168,4 +190,17 @@ margin-right: 0;
   font-size: 24px;
   font-weight: 500;
   
+}
+
+/* === OurTeam === */
+
+.container_our_team {
+  margin-bottom: 50px;
+}
+
+.list_team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }

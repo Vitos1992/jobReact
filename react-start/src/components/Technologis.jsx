@@ -4,7 +4,7 @@ import { ways } from "../components/data.js";
 export default function Technologis() {
     return (
         <section className="technologis">
-            <h2>Technologis</h2>
+            <h2 className="title_section">Technologis</h2>
 
             <ul className="list list_ways">
                 {/* тернарний оператор з методом (.map()) завдяки якому 

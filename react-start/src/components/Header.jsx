@@ -8,7 +8,7 @@ function Header() {
     setInterval(() => setNow(new Date()), 1000)
     
     return (
-    <header>
+    <header className='header_react'>
         <div className='header_box'>
             <div className='box_log'>
                 <img src={Logo} alt={'Логотип'} className='img_log' />

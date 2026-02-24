@@ -12,7 +12,7 @@ export default function AboutTech() {
 
     return (
     <section className="about">
-        <h2>About us</h2>
+        <h2 className="title_section">About us</h2>
         <div className="btn_section">
             <Button onClick={() => handOnClick("next")}>Next</Button>
             <Button onClick={() => handOnClick("priveus")}>Priveus</Button>
