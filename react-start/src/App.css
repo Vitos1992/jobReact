@@ -204,3 +204,14 @@ margin-right: 0;
   justify-content: center;
   gap: 15px;
 }
+
+.foons_team {
+  max-width: 265px;
+  background-color: #fff;
+  flex-basis: calc((100% - 72px) /3);
+}
+
+.img_team {
+  width: 265px;
+  height: 260px;
+}

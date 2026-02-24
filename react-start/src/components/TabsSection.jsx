@@ -1,11 +1,11 @@
 
 import Button from "./Button/Button";
 
-export default function TabsSection() {
+export default function TabsSection({ active, onChacge }) {
     return (
         <section className="tabs">
-            <Button>Our Team</Button>
-            <Button>Customers</Button>
+            <Button isActive={active === 'main'} onClick={() => onChacge('main')}>Our Team</Button>
+            <Button isActive={active === 'ourTeam'} onClick={() => onChacge('ourTeam')}>Customers</Button>
         </section>
     );
 
