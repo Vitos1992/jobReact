@@ -12,9 +12,9 @@ export default function Feedback() {
                         <input type="text" id="name" className="control"/>
                         <label htmlFor="services" className="form_label">Services</label>
                         <select id="services" className="control">
-                            <option value="teamlid">Team lid</option>
-                            <option value="front-end">Front-end develepor</option>
-                            <option value="back-end">Back-end develepor</option>
+                            <option className="control_option" value="teamlid">Team lid</option>
+                            <option className="control_option" value="front-end">Front-end develepor</option>
+                            <option className="control_option" value="back-end">Back-end develepor</option>
                         </select>
                     </div>
                     <Button>SEND</Button>
