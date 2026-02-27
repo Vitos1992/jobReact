@@ -1,0 +1,25 @@
+import Button from "./Button/Button";
+
+export default function Feedback() {
+    return (
+        <section className="feedback">
+            <div>
+                <h1>Feedback</h1>
+
+                <from className="form_box">
+                    <div className="services_from">
+                        <label htmlFor="name" className="form_label">First Name</label>
+                        <input type="text" id="name" className="control"/>
+                        <label htmlFor="services" className="form_label">Services</label>
+                        <select id="services" className="control">
+                            <option value="teamlid">Team lid</option>
+                            <option value="front-end">Front-end develepor</option>
+                            <option value="back-end">Back-end develepor</option>
+                        </select>
+                    </div>
+                    <Button>SEND</Button>
+                </from>
+            </div>
+        </section>
+    );
+}

@@ -13,7 +13,7 @@ button {
 }
 
 button:hover {
-    background-color: #11445e;
+    background-color: rgb(58, 130, 106);
     border-color: #2488ba;
 }
 
@@ -22,4 +22,12 @@ button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
     background-color: aquamarine;
     color: #23303a;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 0 auto;
 }
