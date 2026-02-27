@@ -52,9 +52,11 @@ body {
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -141,7 +143,7 @@ body {
   margin-right: auto;
 }
 
-.text_item {  
+.text_item {
   display: block;
   width: 496px;
   font-size: 24px;
@@ -150,7 +152,8 @@ body {
   line-height: 1.11;
   text-align: center;
   margin-left: auto;
-  margin-right: auto;}
+  margin-right: auto;
+}
 
 
 .card {
@@ -162,8 +165,8 @@ body {
 }
 
 .list_box {
-max-width: 270px; 
-margin-right: 0;
+  max-width: 270px;
+  margin-right: 0;
 }
 
 .title_tech {
@@ -214,7 +217,7 @@ margin-right: 0;
   color: #23303a;
   font-size: 24px;
   font-weight: 500;
-  
+
 }
 
 /* === OurTeam === */
@@ -249,7 +252,7 @@ margin-right: 0;
 }
 
 .form_box {
-  background-color: brown;
+  background-color: #314146;
   width: 900px;
   display: flex;
   align-items: center;
@@ -257,6 +260,8 @@ margin-right: 0;
   margin: 0 auto;
   padding: 25px;
   border-radius: 25px;
+  border: 2px solid #03d48f;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .services_from {
@@ -265,6 +270,7 @@ margin-right: 0;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 15px;
+
 }
 
 .form_label {
@@ -272,7 +278,9 @@ margin-right: 0;
   font-weight: 500;
   color: #efefef;
   text-align: start;
+  color: #FFF;
   margin-bottom: 8px;
+  
 }
 
 .control {
@@ -282,11 +290,22 @@ margin-right: 0;
   height: 40px;
   margin-bottom: 10px;
   background-color: transparent;
-  border-radius: 25px;
+  border-radius: 15px;
   text-align: center;
+  color: #FFF;
+  cursor: pointer;
+
+  transform: 2s ;
+  transition: border 250ms linear;
+}
+
+.control:hover {
+  border: 2px solid #03d48f;
+  transition: all;
 }
 
 .control_option {
-  background-color: brown;
+  background-color: #314146;
   text-align: center;
+  cursor: pointer;
 }
