@@ -13,7 +13,7 @@ export default function Feedback() {
     return (
         <section className="feedback">
             <div>
-                <h1>Feedback</h1>
+                <h1 className="title_section">Feedback</h1>
 
                 <from className="form_box">
                     <div className="services_from">

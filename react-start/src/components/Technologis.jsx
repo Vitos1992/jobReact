@@ -9,17 +9,9 @@ export default function Technologis() {
             <ul className="list list_ways">
                 {/* тернарний оператор з методом (.map()) завдяки якому 
                     масив перебразовуємо в компонент <WayToTech { ...way} /> */}
-                {ways.map((way) => (
-                    <WayToTech key={way.title} {...way} />
+                {ways.map((way, index) => (
+                    <WayToTech key={way.title} {...way} delay={index * 0.2} />
                 ))}
-
-                {/* <WayToTech 
-            title={ways[0].title} 
-            description={ways[0].description} 
-            />
-            <WayToTech { ...ways[1]} />
-            <WayToTech { ...ways[2]} />
-            <WayToTech { ...ways[3]} /> */}
             </ul>
         </section>
     );

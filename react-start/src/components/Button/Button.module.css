@@ -1,12 +1,15 @@
 button {
     width: 200px;
     height: 45px;
+    font-weight: bold;
     border-radius: 8px;
     border: 1px solid transparent;
     font-size: 1.2em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #1a1a1a;
+    background: #22c55e;
+    color: white;
+    padding: 12px 24px;
     cursor: pointer;
     transition: border-color 0.25s;
     text-align: center;

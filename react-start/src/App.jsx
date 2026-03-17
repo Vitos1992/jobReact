@@ -5,8 +5,8 @@ import Technologis from './components/Technologis.jsx';
 import AboutTech from './components/AboutTecnh.jsx';
 import OurTeam from './components/OurTeam.jsx';
 import Feedback from './components/Feedback.jsx';
-import TabsSection from './components/TabsSection.jsx';
 import Footer from './components/Footer/Footer.jsx'
+import TabsSection from './components/TabsSection.jsx'
 import { useState } from 'react';
 
 function App() {
@@ -15,9 +15,10 @@ function App() {
   return (
     <>
       <Header />
+      <TabsSection active={tab} onChacge={(current) => setTab(current)}/>
+
       <main>
-        <Greetings />
-        <TabsSection active={tab} onChacge={(current) => setTab(current)}/>
+        {/* <TabsSection active={tab} onChacge={(current) => setTab(current)}/> */}
         
         {tab === 'main' && <OurTeam />}
         <Feedback />
