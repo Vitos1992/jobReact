@@ -1,0 +1,66 @@
+/* === footer === */
+
+.footer_box {
+    background-color: #314146;
+    padding: 50px 0px 50px 0px;
+}
+
+.box_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box_logo {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title_logo_footer {
+    font-family: "Releway", sans-serif;
+    color: aquamarine;
+    font-size: 18px;
+    line-height: 1.17;
+    font-weight: 800;
+    text-decoration: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.title_studio_footer {
+    font-family: "Releway", sans-serif;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.17;
+    font-weight: 800;
+    text-decoration: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.footer_text {
+    text-align: start;
+    width: 264px;
+    color: aquamarine;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.box_media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title_media {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: aquamarine;
+    margin-bottom: 16px;
+}
+

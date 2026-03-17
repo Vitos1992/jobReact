@@ -1,4 +1,4 @@
-import Button from '../components/Button/Button.jsx';
+import Button from './Button/Button.jsx';
 import { useState } from "react";
 import { listNext } from '../components/data.js';
 
