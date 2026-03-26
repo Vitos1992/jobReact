@@ -39,3 +39,6 @@ export default App;
 //useEffect - це хук який React, який дозволяє виконувати код після рендера компонента:
 //State змінився -> рендер -> DOM оновлюється -> викон. useEffect.
 //useEffect для побічних дій side effects - це будь-яка дія яка виходить за межі React UI 
+
+//чому React не може працювату без useState
+//

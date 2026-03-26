@@ -21,7 +21,7 @@ export default function Feedback() {
                         <input type="text" id="name" className="control" value={name} onChange={handLeNameCange} />
 
                         <label htmlFor="services" className="form_label">Services</label>
-                        <select id="services" className="control" value={services} onChange={event => setServices(event.target.value)} >
+                        <select id="services" className="control_select" value={services} onChange={event => setServices(event.target.value)} >
                             <option className="control_option" value="teamlid">Team lid</option>
                             <option className="control_option" value="front-end">Front-end develepor</option>
                             <option className="control_option" value="back-end">Back-end develepor</option>
@@ -34,7 +34,7 @@ export default function Feedback() {
                         Services: {services}
                     </pre> */}
 
-                    <Button>SEND</Button>
+                    <Button className="send_btn">SEND</Button>
                 </from>
             </div>
         </section>

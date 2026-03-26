@@ -13,11 +13,15 @@ export default function OurTeam() {
                     <li className="list foons_team">
                         <div className='flip_foons'>
                             <div className='flip_foons_inner'>
+
                                 <div className='flip_foons_front'>
                                     <img src={photo11} alt={'Ivan Guerrero, Team Lead'} className='img_team' />
-                                    <h3>Ivan Guerrero</h3>
-                                    <p>Team lead</p>
+                                    <div className="flip_item_box">
+                                        <h3>Ivan Guerrero</h3>
+                                        <p>Team lead</p>
+                                    </div>
                                 </div>
+                                
                                 <div className='flip_foons_black'>
                                     <div className='flip_foons_text'>
                                         <h3 className='flip_black_title'>Ivan</h3>
@@ -30,16 +34,21 @@ export default function OurTeam() {
                     <li className="list foons_team">
                         <div className='flip_foons'>
                             <div className='flip_foons_inner'>
+
                                 <div className='flip_foons_front'>
                                     <img src={photo10} alt={'Oksana KUZ, Frontend Developer'} className='img_team' />
-                                    <h3>Oksana KUZ</h3>
-                                    <p>Frontend Developer</p>
+                                    <div className="flip_item_box">
+                                        <h3>Oksana KUZ</h3>
+                                        <p>Frontend Developer</p>
+                                    </div>
+                                    
                                 </div>
+
                                 <div className='flip_foons_black'>
                                     <div className='flip_foons_text'>
-                                        <h3 className='flip_black_title'>Ivan</h3>
+                                        <h3 className='flip_black_title'>Oksana KUZ</h3>
                                     </div>
-                                    <h3 className='flip_black_title'>Team Lead</h3>
+                                    <h3 className='flip_black_title'>Frontend Developer</h3>
                                 </div>
                             </div>
                         </div>
