@@ -9,7 +9,6 @@ button {
     font-family: inherit;
     background: #22c55e;
     color: white;
-    padding: 12px 24px;
     cursor: pointer;
     transition: border-color 0.25s;
     text-align: center;

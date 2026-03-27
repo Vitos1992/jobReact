@@ -25,8 +25,8 @@ export default function OurTeam() {
                                 <div className='flip_foons_black'>
                                     <div className='flip_foons_text'>
                                         <h3 className='flip_black_title'>Ivan</h3>
+                                        <h3 className='flip_black_title'>Team Lead</h3>
                                     </div>
-                                    <h3 className='flip_black_title'>Team Lead</h3>
                                 </div>
                             </div>
                         </div>
@@ -47,8 +47,8 @@ export default function OurTeam() {
                                 <div className='flip_foons_black'>
                                     <div className='flip_foons_text'>
                                         <h3 className='flip_black_title'>Oksana KUZ</h3>
+                                        <h3 className='flip_black_title'>Frontend Developer</h3>
                                     </div>
-                                    <h3 className='flip_black_title'>Frontend Developer</h3>
                                 </div>
                             </div>
                         </div>
@@ -66,8 +66,8 @@ export default function OurTeam() {
                                 <div className='flip_foons_black'>
                                     <div className='flip_foons_text'>
                                         <h3 className='flip_black_title'>Vitaly STOIKOV</h3>
+                                        <h3 className='flip_black_title'>Frontend Developer</h3>
                                     </div>
-                                    <h3 className='flip_black_title'>Frontend Developer</h3>
                                 </div>
                             </div>
                         </div>
