@@ -1,4 +1,4 @@
-button {
+.button {
     width: 200px;
     height: 45px;
     font-weight: bold;
@@ -14,16 +14,21 @@ button {
     text-align: center;
 }
 
-button:hover {
+.button:hover {
     background-color: rgb(58, 130, 106);
     border-color: #2488ba;
 }
 
-button:focus,
-button:focus-visible {
+.button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
     background-color: aquamarine;
     color: #23303a;
+}
+
+.active {
+    background-color: #166534;
+    outline: 3px solid #166534;
+    outline-offset: 3px;
 }
 
 .tabs {

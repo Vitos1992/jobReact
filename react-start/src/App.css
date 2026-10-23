@@ -4,6 +4,8 @@
   text-align: center;
 }
 
+* { box-sizing: border-box; }
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -69,7 +71,8 @@ img {
 
 
 .header_box {
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     display: flex;
     justify-content: center;
     padding: 20px 15px;
@@ -112,7 +115,8 @@ img {
 }
 
 .items {
-  width: 1280px;
+  width: 100%;
+  max-width: 1280px;
   text-align: center;
   /* padding-bottom: 140px;
   padding-top: 140px; */
@@ -125,6 +129,7 @@ img {
 .title_item {
   display: block;
   width: 496px;
+  max-width: 100%;
   font-size: 56px;
   font-weight: 700;
   color: aquamarine;
@@ -136,6 +141,7 @@ img {
 .text_item {
   display: block;
   width: 600px;
+  max-width: 100%;
   font-size: 34px;
   font-weight: 300;
   color: aquamarine;
@@ -262,7 +268,9 @@ img {
 }
 
 .list_ways {
-  width: 1300px;
+  width: 100%;
+  max-width: 1300px;
+  flex-wrap: wrap;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -287,6 +295,8 @@ img {
 }
 
 .list_team {
+  flex-wrap: wrap;
+  padding: 0 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -394,7 +404,8 @@ img {
 .form_box {
   background-color: #dde2e8;
   /* border: 1px solid #314146; */
-  width: 320px;
+  width: calc(100% - 32px);
+  max-width: 384px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -428,7 +439,7 @@ img {
 .control {
   font-size: 16px;
   padding: 15px;
-  width: 90%;
+  width: 100%;
   margin-bottom: 20px;
   border: none;
   outline: none;
@@ -490,11 +501,23 @@ img {
 /* === about === */
 
 .btn_section {
-  width: 1280px;
+  width: 100%;
+  max-width: 1280px;
+  flex-wrap: wrap;
   margin: 0 auto;
   display: flex;
   gap: 25px;
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
+}
+
+.tabs { flex-wrap: wrap; padding-left: 16px; padding-right: 16px; }
+@media (max-width: 600px) {
+  .flex_box_header, .box_item { flex-direction: column; gap: 24px; }
+  .title_item { font-size: 38px; }
+  .text_item { font-size: 24px; }
+  .list_team { gap: 32px; }
+  .btn_section { padding-left: 16px; padding-right: 16px; }
+  .box_media svg { width: 24px; height: 24px; }
 }

@@ -1,6 +1,5 @@
 import './App.css'
 import Header from './components/Header.jsx';
-import Greetings from './components/Greetings.jsx';
 import Technologis from './components/Technologis.jsx';
 import AboutTech from './components/AboutTecnh.jsx';
 import OurTeam from './components/OurTeam.jsx';
@@ -10,18 +9,18 @@ import TabsSection from './components/TabsSection.jsx'
 import { useState } from 'react';
 
 function App() {
-  const [tab, setTab ] = useState('ourTeam');
+  const [tab, setTab ] = useState('feedback');
 
   return (
     <>
       <Header />
-      <TabsSection active={tab} onChacge={(current) => setTab(current)}/>
+      <TabsSection active={tab} onChange={setTab}/>
 
       <main>
         {/* <TabsSection active={tab} onChacge={(current) => setTab(current)}/> */}
         
-        {tab === 'main' && <OurTeam />}
-        <Feedback />
+        {tab === 'ourTeam' && <OurTeam />}
+        {tab === 'feedback' && <Feedback />}
 
         <Technologis />
         <AboutTech />

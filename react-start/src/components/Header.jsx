@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../App.css'  
 import Logo from '../assets/logo.svg'
 import React from 'react';
@@ -15,7 +15,10 @@ function Greetings() {
 
 function Header() {
     const [now, setNow] = useState(new Date());
-    setInterval(() => setNow(new Date()), 1000)
+    useEffect(() => {
+        const intervalId = setInterval(() => setNow(new Date()), 1000);
+        return () => clearInterval(intervalId);
+    }, []);
 
     // const [tab, setTab ] = useState('ourTeam');
 

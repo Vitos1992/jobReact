@@ -5,6 +5,26 @@ export default function Feedback() {
 
     const [name, setName] =  useState('')
     const [services, setServices] =  useState('teamlid')
+    const [status, setStatus] = useState('');
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        const trimmedName = name.trim();
+        if (!trimmedName) {
+            setStatus('Введіть ім’я.');
+            return;
+        }
+        try {
+            const stored = JSON.parse(localStorage.getItem('jobReact.feedback') || '[]');
+            const entries = Array.isArray(stored) ? stored : [];
+            entries.push({ name: trimmedName, services, createdAt: new Date().toISOString() });
+            localStorage.setItem('jobReact.feedback', JSON.stringify(entries));
+            setName('');
+            setStatus('Відгук збережено в цьому браузері.');
+        } catch {
+            setStatus('Не вдалося зберегти відгук. Спробуйте ще раз.');
+        }
+    }
 
     function handLeNameCange(event) {
         setName(event.target.value)
@@ -15,10 +35,10 @@ export default function Feedback() {
             <div>
                 <h1 className="title_section">Feedback</h1>
 
-                <from className="form_box">
+                <form className="form_box" onSubmit={handleSubmit}>
                     <div className="services_from">
                         <label htmlFor="name" className="form_label">First Name</label>
-                        <input type="text" id="name" className="control" value={name} onChange={handLeNameCange} />
+                        <input type="text" name="name" required id="name" className="control" value={name} onChange={handLeNameCange} />
 
                         <label htmlFor="services" className="form_label">Services</label>
                         <select id="services" className="control_select" value={services} onChange={event => setServices(event.target.value)} >
@@ -34,8 +54,9 @@ export default function Feedback() {
                         Services: {services}
                     </pre> */}
 
-                    <Button className="send_btn">SEND</Button>
-                </from>
+                    <Button type="submit" className="send_btn">SEND</Button>
+                    <p className="text" role="status">{status}</p>
+                </form>
             </div>
         </section>
     );

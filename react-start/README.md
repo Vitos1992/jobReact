@@ -1,5 +1,21 @@
 # React + Vite
 
+## Run and check
+
+Run these commands from `react-start/`:
+
+```sh
+npm ci
+npm run dev
+npm run build
+npm run lint
+npm test
+```
+
+Feedback is saved locally in this browser under `jobReact.feedback` in
+localStorage. It is not sent to a server. Storage errors keep the entered name
+and display an error message.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
